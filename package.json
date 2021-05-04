@@ -18,5 +18,11 @@
   "homepage": "https://github.com/tamakiii-sandbox/hello-pptx#readme",
   "dependencies": {
     "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "ts-loader": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.36.2",
+    "webpack-cli": "^4.6.0"
   }
 }
