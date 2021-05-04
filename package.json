@@ -1,0 +1,19 @@
+{
+  "name": "hello-pptx",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tamakiii-sandbox/hello-pptx.git"
+  },
+  "author": "tamakiii",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/tamakiii-sandbox/hello-pptx/issues"
+  },
+  "homepage": "https://github.com/tamakiii-sandbox/hello-pptx#readme"
+}
