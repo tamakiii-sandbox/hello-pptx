@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/tamakiii-sandbox/hello-pptx/issues"
   },
-  "homepage": "https://github.com/tamakiii-sandbox/hello-pptx#readme"
+  "homepage": "https://github.com/tamakiii-sandbox/hello-pptx#readme",
+  "dependencies": {
+    "xml2js": "^0.4.23"
+  }
 }
