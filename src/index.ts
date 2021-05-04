@@ -1,3 +1,7 @@
-import { parseString } from "xml2js";
+import { parseString } from "xml2js"
 
-console.log(parseString);
+const xml = "<root>Hello xml2js!</root>"
+
+parseString(xml, (err, result) => {
+  console.dir(result)
+});
