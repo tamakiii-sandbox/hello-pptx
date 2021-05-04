@@ -1,4 +1,4 @@
-.PHONY: help setup unzip clean
+.PHONY: help setup build build-dev unzip clean
 
 help:
 	@cat $(fistwrod $(MAKEFILE_LIST))
@@ -6,6 +6,12 @@ help:
 setup: \
 	dependency/won21kr/js-pptx \
 	dependency/g21589/pptx2html
+
+build:
+	npx --no-install webpack
+
+build-dev:
+	npx --no-install webpack -w
 
 unzip: \
 	dist/pptx/01-Presentation-one-page
