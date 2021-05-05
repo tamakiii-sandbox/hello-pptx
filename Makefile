@@ -18,7 +18,7 @@ unzip: \
 	dist/pptx/01-Presentation-one-page
 
 src/office.js:
-	curl -sL https://appsforoffice.microsoft.com/lib/beta/hosted/office.js > $@
+	curl -sL https://appsforoffice.microsoft.com/lib/beta/hosted/office.js | nkf -Lu > $@
 
 dist/pptx/01-Presentation-one-page: pptx/01-Presentation-one-page.pptx | dist/pptx
 	unzip $< -d $@
@@ -44,3 +44,4 @@ dependency:
 
 clean:
 	rm -rf dist
+	rm -rf src/office.js
