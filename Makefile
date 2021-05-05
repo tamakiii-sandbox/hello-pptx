@@ -34,7 +34,7 @@ dependency/won21kr/js-pptx: dependency
 
 dependency/g21589/pptx2html: dependency
 	[ ! -d $@ ] \
-		&& git clone git clone git@github.com:g21589/PPTX2HTML.git $@ \
+		&& git clone git@github.com:g21589/PPTX2HTML.git $@ \
 		|| (test -d $@/.git && (git -C $@ pull origin $$(git -C $@ symbolic-ref --short HEAD)) || true)
 
 dependency/airpptx/airppt: dependency
@@ -44,17 +44,17 @@ dependency/airpptx/airppt: dependency
 
 dependency/airpptx/airppt-renderer: dependency
 	[ ! -d $@ ] \
-		&& git clone ggit@github.com:airpptx/airppt-renderer.git $@ \
+		&& git clone git@github.com:airpptx/airppt-renderer.git $@ \
 		|| (test -d $@/.git && (git -C $@ pull origin $$(git -C $@ symbolic-ref --short HEAD)) || true)
 
 dependency/airpptxairppt-parser: dependency
 	[ ! -d $@ ] \
-		&& git clone ggit@github.com:airpptx/airppt-parser.git $@ \
+		&& git clone git@github.com:airpptx/airppt-parser.git $@ \
 		|| (test -d $@/.git && (git -C $@ pull origin $$(git -C $@ symbolic-ref --short HEAD)) || true)
 
 dependency/airpptx/airppt-models: dependency
 	[ ! -d $@ ] \
-		&& git clone ggit@github.com:airpptx/airppt-models.git $@ \
+		&& git clone git@github.com:airpptx/airppt-models.git $@ \
 		|| (test -d $@/.git && (git -C $@ pull origin $$(git -C $@ symbolic-ref --short HEAD)) || true)
 
 dist/pptx: dist
