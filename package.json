@@ -22,6 +22,7 @@
   },
   "devDependencies": {
     "@types/office-js": "^1.0.177",
+    "@types/office-js-preview": "^1.0.214",
     "@types/xml2js": "^0.4.8",
     "buffer": "^6.0.3",
     "stream-browserify": "^3.0.0",
