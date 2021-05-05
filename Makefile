@@ -24,10 +24,14 @@ dist/pptx/01-Presentation-one-page: pptx/01-Presentation-one-page.pptx | dist/pp
 	unzip $< -d $@
 
 dependency/won21kr/js-pptx: dependency
-	git clone git@github.com:won21kr/js-pptx.git $@
+	[ ! -d $@ ] \
+		&& git clone git@github.com:won21kr/js-pptx.git $@ \
+		|| (test -d $@/.git && (git -C $@ pull origin $$(git -C $@ symbolic-ref --short HEAD)) || true)
 
 dependency/g21589/pptx2html: dependency
-	git clone git@github.com:g21589/PPTX2HTML.git $@
+	[ ! -d $@ ] \
+		&& git clone git clone git@github.com:g21589/PPTX2HTML.git $@ \
+		|| (test -d $@/.git && (git -C $@ pull origin $$(git -C $@ symbolic-ref --short HEAD)) || true)
 
 dist/pptx: dist
 	mkdir $@
