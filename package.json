@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tamakiii-sandbox/hello-pptx#readme",
   "dependencies": {
+    "@microsoft/office-js": "^1.1.54",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
