@@ -5,7 +5,8 @@ help:
 
 setup: \
 	dependency/won21kr/js-pptx \
-	dependency/g21589/pptx2html
+	dependency/g21589/pptx2html \
+	src/office.js
 
 build:
 	npx --no-install webpack
@@ -15,6 +16,9 @@ build-dev:
 
 unzip: \
 	dist/pptx/01-Presentation-one-page
+
+src/office.js:
+	curl -sL https://appsforoffice.microsoft.com/lib/beta/hosted/office.js > $@
 
 dist/pptx/01-Presentation-one-page: pptx/01-Presentation-one-page.pptx | dist/pptx
 	unzip $< -d $@
